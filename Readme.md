@@ -1,7 +1,7 @@
-Codex Contracts
+Logos Storage Contracts
 ================
 
-An experimental implementation of the smart contracts that underlay the Codex
+An experimental implementation of the smart contracts that underlay the Logos Storage
 storage network. Its goal is to experiment with the rules around the bidding
 process, the storage contracts, the storage proofs and the host collateral.
 Neither completeness nor correctness are guaranteed at this moment in time.
@@ -64,7 +64,7 @@ You can run Certora's specs with the provided `npm` script:
 Overview
 --------
 
-The Codex storage network depends on hosts offering storage to clients of the
+The Logos Storage storage network depends on hosts offering storage to clients of the
 network. The smart contracts in this repository handle interactions between
 client and hosts as they negotiate and fulfill a contract to store data for a
 certain amount of time.
@@ -146,10 +146,10 @@ References
 ----------
 
    * [A marketplace for storage
-     durability](https://github.com/codex-storage/codex-research/blob/master/design/marketplace.md)
+     durability](https://github.com/logos-storage/logos-storage-research/blob/master/design/marketplace.md)
      (design document)
    * [Timing of Storage
-     Proofs](https://github.com/codex-storage/codex-research/blob/master/design/storage-proof-timing.md)
+     Proofs](https://github.com/logos-storage/logos-storage-research/blob/master/design/storage-proof-timing.md)
      (design document)
 
 To Do

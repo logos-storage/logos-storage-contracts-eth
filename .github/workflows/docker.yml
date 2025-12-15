@@ -20,7 +20,7 @@ on:
 jobs:
   build-and-push:
     name: Build and Push
-    uses: codex-storage/github-actions/.github/workflows/docker-reusable.yml@master
+    uses: logos-storage/github-actions/.github/workflows/docker-reusable.yml@master
     with:
       docker_file: docker/Dockerfile
       dockerhub_repo: codexstorage/codex-contracts-eth

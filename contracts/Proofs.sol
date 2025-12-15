@@ -80,7 +80,7 @@ abstract contract Proofs is Periods {
    * @param id Slot's ID for which the pointer should be calculated
    * @param period Period for which the pointer should be calculated
    * @return Uint8 pointer that is stable over current Period, ie an integer offset [0-255] of the last 256 blocks, pointing to a block that remains constant for the entire Period's duration.
-   * @dev For more information see [timing of storage proofs](https://github.com/codex-storage/codex-research/blob/41c4b4409d2092d0a5475aca0f28995034e58d14/design/storage-proof-timing.md)
+   * @dev For more information see [timing of storage proofs](https://github.com/logos-storage/logos-storage-research/blob/41c4b4409d2092d0a5475aca0f28995034e58d14/design/storage-proof-timing.md)
    */
   function _getPointer(SlotId id, Period period) internal view returns (uint8) {
     uint256 blockNumber = block.number % 256;
@@ -94,7 +94,7 @@ abstract contract Proofs is Periods {
   /**
    * @param id Slot's ID for which the pointer should be calculated
    * @return Uint8 pointer that is stable over current Period, ie an integer offset [0-255] of the last 256 blocks, pointing to a block that remains constant for the entire Period's duration.
-   * @dev For more information see [timing of storage proofs](https://github.com/codex-storage/codex-research/blob/41c4b4409d2092d0a5475aca0f28995034e58d14/design/storage-proof-timing.md)
+   * @dev For more information see [timing of storage proofs](https://github.com/logos-storage/logos-storage-research/blob/41c4b4409d2092d0a5475aca0f28995034e58d14/design/storage-proof-timing.md)
    */
   function getPointer(SlotId id) public view returns (uint8) {
     return _getPointer(id, _blockPeriod());
@@ -147,7 +147,7 @@ abstract contract Proofs is Periods {
     bytes32 challenge = _getChallenge(pointer);
 
     /// Scaling of the probability according the downtime configuration
-    /// See: https://github.com/codex-storage/codex-research/blob/41c4b4409d2092d0a5475aca0f28995034e58d14/design/storage-proof-timing.md#pointer-downtime
+    /// See: https://github.com/logos-storage/logos-storage-research/blob/41c4b4409d2092d0a5475aca0f28995034e58d14/design/storage-proof-timing.md#pointer-downtime
     uint256 probability = slotProbability(id);
     isRequired = probability == 0 || uint256(challenge) % probability == 0;
   }
@@ -179,7 +179,7 @@ abstract contract Proofs is Periods {
    * in downtime (hence no proof required now) and at the same time the proof
    * will be required later on in the Period.
    *
-   * @dev for more info about downtime see [timing of storage proofs](https://github.com/codex-storage/codex-research/blob/41c4b4409d2092d0a5475aca0f28995034e58d14/design/storage-proof-timing.md#pointer-downtime)
+   * @dev for more info about downtime see [timing of storage proofs](https://github.com/logos-storage/logos-storage-research/blob/41c4b4409d2092d0a5475aca0f28995034e58d14/design/storage-proof-timing.md#pointer-downtime)
    * @param id SlotId for which the proof requirements should be checked. If the Slot's state is other than Filled, `false` is always returned.
    * @return bool
    */
