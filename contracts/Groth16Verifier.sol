@@ -1,6 +1,6 @@
 // Copyright 2017 Christian Reitwiessner
 // Copyright 2019 OKIMS
-// Copyright 2024 Codex
+// Copyright 2025 Logos Storage
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
 // in the Software without restriction, including without limitation the rights

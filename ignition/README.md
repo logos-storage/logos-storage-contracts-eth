@@ -24,10 +24,10 @@ Then we can run:
 npx hardhat ignition deploy ignition/modules/migration/token.js --network taiko_test
 ```
 
-**Note:** Check [this comment](https://github.com/codex-storage/codex-contracts-eth/pull/231#issuecomment-2808996517) for more context.
+**Note:** Check [this comment](https://github.com/logos-storage/logos-storage-contracts-eth/pull/231#issuecomment-2808996517) for more context.
 
 Here is the list of previous commits containing the ABI contracts that were deployed:
 
-- [Taiko](https://github.com/codex-storage/codex-contracts-eth/commit/1854dfba9991a25532de5f6a53cf50e66afb3c8b)
-- [Testnet](https://github.com/codex-storage/codex-contracts-eth/commit/449d64ffc0dc1478d0690d36f037358084a17b09)
-- [Linea](https://github.com/codex-storage/codex-contracts-eth/pull/226/commits/2dddc260152b6e9c24ae372397f9b9b2d27ce8e4)
+- [Taiko](https://github.com/logos-storage/logos-storage-contracts-eth/commit/1854dfba9991a25532de5f6a53cf50e66afb3c8b)
+- [Testnet](https://github.com/logos-storage/logos-storage-contracts-eth/commit/449d64ffc0dc1478d0690d36f037358084a17b09)
+- [Linea](https://github.com/logos-storage/logos-storage-contracts-eth/pull/226/commits/2dddc260152b6e9c24ae372397f9b9b2d27ce8e4)
